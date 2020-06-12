@@ -1,6 +1,6 @@
 # weather-app
 
-Heroku link will be provided.
+https://merts-weather-app.herokuapp.com/
 
 This is my Weather App ☀
 
@@ -8,5 +8,4 @@ It uses the API from: https://openweathermap.org/
 
 Here is a screenshot of the page:
 
-![screenshot](https://user-images.githubusercontent.com/34686131/84483743-796baa80-aca2-11ea-95fa-5bfe71cdfbef.png)
->>>>>>> 3049a3ee1b5a3175fb58976e12a6891d61bc2099
+![screenshot](https://user-images.githubusercontent.com/34686131/84497228-015baf80-acb7-11ea-82cf-c5f48c45da19.png)
