@@ -14,9 +14,9 @@ function Results(props) {
       <div className="weather-box">
         <div className="temp">
           {Math.round(props.temp)} °C
-              </div>
+        </div>
         <div className="weather">
-          {props.main}
+          {props.text}
         </div>
       </div>
     </div>
