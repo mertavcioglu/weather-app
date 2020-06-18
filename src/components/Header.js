@@ -7,6 +7,7 @@ function Header(props) {
       <img className="logo" src={logo} alt="logo" />
       <div className="search-box">
         <input
+          autoComplete="off"
           id="form"
           autoFocus
           type="text"
