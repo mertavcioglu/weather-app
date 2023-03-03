@@ -1,6 +1,6 @@
 # weather-app
 
-https://merts-weather-app.herokuapp.com/
+https://mertavcioglu.github.io/weather-app/
 
 This is my Weather App ☀
 
