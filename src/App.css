@@ -1,38 +1,139 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montseratt", sans-serif;
+}
+
+.app {
+  background-image: url(./img/cold.jpg);
+  background-size: cover;
+  background-position: 0 -50px;
+  transition: 0.5s ease-out;
+}
+
+.app.hot {
+  background-image: url(./img/hot.jpg);
+}
+
+main {
+  text-align: center;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.8)
+  );
+  padding: 25px;
+}
+
+.logo {
+  height: 250px;
+}
+
+.search-box {
+  margin: 50px auto;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.67);
+  border-radius: 8px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.location-box .location {
+  color: white;
+  font-size: 2rem;
+  font-weight: 550;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 50, 0.5);
+  margin-top: 40px;
+}
+
+.location-box .date {
+  color: rgb(201, 201, 201);
+  font-size: 1.25rem;
+  font-weight: 350;
+  font-style: italic;
+  text-align: center;
+  margin: 10px 0 0 0;
+  text-shadow: 2px 2px rgba(50, 50, 50, 0.5);
+}
+
+.weather-box {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.weather-box .temp {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+  padding: 10px 25px;
   color: white;
+  font-size: 8rem;
+  font-weight: 900;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.weather-box .weather {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  right: 10px;
+}
+
+.copyright {
+  text-align: center;
+  bottom: 0;
+  font-size: 1rem;
+  margin: 10px auto;
+  width: 50%;
+  height: 50%;
+  color: #c4bdbd;
+  font-weight: 400;
+}
+
+.copyright-name {
+  font-weight: 600;
+  color: rgb(232, 240, 240);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1024px) {
+  .app {
+    background-image: url(./img/cold-pc.jpg);
   }
-  to {
-    transform: rotate(360deg);
+
+  .app.hot {
+    background-image: url(./img/hot-pc.jpg);
+  }
+
+  .search-box {
+    width: 50%;
   }
 }
